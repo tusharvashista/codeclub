@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Main */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    }
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration:solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.programs {
+    margin-top: 0.5rem;
+    padding: 1.5rem;
+    
+}
+
+.programs h2 {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+  }
+
+.program-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1.5rem;
+    text-align: center;
+}
+
+  
+
+  
+
+
+.program {
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 1.6rem;
+    padding: 1.5rem;
+    color: white;
+    background-size:cover;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#program1 {
+    background-image: url(images/python.jpeg);
+   
+}
+
+#program2 {
+    background-image: url(images/htmlcss.jpeg);
+    background-color:wheat;
+   
+}
+
+#program3 {
+    background-image: url(images/gamedev.jpeg);
+    
+}
+
+
+.program h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.program p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+  
+.program:hover {
+    transform: scale(1.1);
+  }
+
+  .program .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .program:hover .overlay {
+    opacity: 1;
+  }
+  .program .overlay h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .program .overlay p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+.about-us {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .contact-section {
+    background-color: yellow;
+    color: black;
+    padding: 50px;
+  }
+  
+  .contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-info h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p strong {
+    font-weight: bold;
+  }
+  
+  .contact-info a {
+    color: #f7d51d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    color: white;
+  }
+  
+  
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+
+nav a {
+    font-size: 16px;
+}
+
+.hero {
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.program {
+    padding: 10px;
+}
+
+.program img {
+    margin-bottom: 5px;
+}
+
+.program h3 {
+    font-size: 20px;
+}
+
+.program p {
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 14px;
+}
+}
+
+  
+.logo {
+    width: 15rem;
+  }
+  
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+#resources {
+    max-width: 100rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem;
+  }
+  
+#resources h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+  }
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+  
+  .resource {
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  .resource:hover {
+    transform: scale(1.05);
+  }
+  
+  .resource h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .resource p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+ 

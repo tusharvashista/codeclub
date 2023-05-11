@@ -329,7 +329,12 @@ footer p {
     gap: 50px;
     justify-items: center;
   }
-  
+.resource-list>a {
+  text-decoration: none;
+  color: black;
+  padding: none;
+  margin: none;
+}
   .resource {
     background-color: yellow;
     padding: 20px;
